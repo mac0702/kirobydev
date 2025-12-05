@@ -32,10 +32,10 @@ SWIFT (Society for Worldwide Interbank Financial Telecommunication) was founded 
 
 ```bash
 # Clone the repository
-git clone https://github.com/[username]/swift-haunt.git
+git clone https://github.com/mac0702/kirobydev.git
 
 # Install dependencies
-cd swift-haunt
+cd kirobydev
 npm install
 
 # Run development server

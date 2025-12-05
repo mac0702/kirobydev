@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Script from 'next/script';
 import { SwiftParser, ParsedMessage } from '@/lib/swift-parser';
 
 export default function Home() {
@@ -233,7 +234,7 @@ export default function Home() {
       </footer>
 
       {/* Load Haunted Sound */}
-      <script src="/haunted-sound.js" async></script>
+      <Script src="/haunted-sound.js" strategy="lazyOnload" />
     </div>
   );
 }

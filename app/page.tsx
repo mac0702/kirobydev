@@ -26,22 +26,44 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-red-950 to-black text-gray-100">
-      {/* Haunted Background Effects */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent animate-pulse"></div>
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent animate-pulse"></div>
-      </div>
+      {/* EXTREME HORROR BACKGROUND EFFECTS */}
+
+      {/* Animated Noise Background */}
+      <div className="noise-bg"></div>
+
+      {/* Vignette Effect */}
+      <div className="vignette"></div>
+
+      {/* Scanline Effect */}
+      <div className="scanline"></div>
+
+      {/* Blood Drips */}
+      <div className="blood-drip"></div>
+      <div className="blood-drip"></div>
+      <div className="blood-drip"></div>
+      <div className="blood-drip"></div>
+      <div className="blood-drip"></div>
+      <div className="blood-drip"></div>
+
+      {/* Floating Skulls */}
+      <div className="floating-skull">💀</div>
+      <div className="floating-skull">💀</div>
+      <div className="floating-skull">💀</div>
+
+      {/* Danger Border Pulses */}
+      <div className="fixed top-0 left-0 w-full h-1 bg-red-600 danger-border"></div>
+      <div className="fixed bottom-0 left-0 w-full h-1 bg-red-600 danger-border"></div>
 
       {/* Header */}
-      <header className="relative z-10 border-b border-red-900/50 bg-black/50 backdrop-blur-sm">
+      <header className="relative z-10 border-b border-red-900/50 bg-black/80 backdrop-blur-sm creepy-shadow">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-4xl font-bold text-center bg-gradient-to-r from-red-500 via-orange-500 to-red-500 bg-clip-text text-transparent animate-pulse">
+          <h1 className="text-5xl font-bold text-center blood-text glitch-text">
             🏦 SWIFT.HAUNT 💀
           </h1>
-          <p className="text-center text-gray-400 mt-2">
+          <p className="text-center text-gray-400 mt-2 animate-pulse">
             Resurrecting 1973 Banking Protocol from the Dead
           </p>
-          <p className="text-center text-sm text-red-400 mt-1">
+          <p className="text-center text-sm text-red-400 mt-1 danger-border px-4 py-1 inline-block">
             ⚠️ Educational Demo Only - Not for Production Use ⚠️
           </p>
         </div>
@@ -52,19 +74,19 @@ export default function Home() {
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Input Section */}
           <div className="space-y-4">
-            <div className="bg-black/70 border border-red-900/50 rounded-lg p-6 shadow-2xl shadow-red-900/20">
+            <div className="bg-black/90 border-2 border-red-900/70 rounded-lg p-6 shadow-2xl haunted-glow creepy-shadow">
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-semibold text-red-400">📨 SWIFT MT103 Message</h2>
+                <h2 className="text-xl font-semibold text-red-400 blood-text">📨 SWIFT MT103 Message</h2>
                 <div className="space-x-2">
                   <button
                     onClick={handleLoadSample}
-                    className="px-3 py-1 text-sm bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded transition"
+                    className="px-3 py-1 text-sm bg-gray-800 hover:bg-gray-700 border border-red-600 rounded transition shake-on-hover"
                   >
                     Load Sample
                   </button>
                   <button
                     onClick={handleClear}
-                    className="px-3 py-1 text-sm bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded transition"
+                    className="px-3 py-1 text-sm bg-gray-800 hover:bg-gray-700 border border-red-600 rounded transition shake-on-hover"
                   >
                     Clear
                   </button>
